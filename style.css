@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--tipo-de-fonte);
+}
+
+:root{
+    --tipo-de-fonte: "Montserrat", sans-serif;
+}
+
+body{
+    width:100%;
+    height:100%;
+}
+
+.cabecalho{
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.imagem{
+    height: 140px;
+    margin-left: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin: 40px;
+    list-style: none;
+}
+
+.menu__botao{
+    padding: 10px;
+    border: none;
+    background-color: white;
+}
+
+.menu__botao:hover{
+    background-color: #ebeef0;
+    border-radius:8px;
+}
+
+.botao-comprar{
+    background-color: #d53b00;
+    margin-right: 20px;
+    padding:0 10px;
+    border-radius: 20px;
+    color: white;
+    height:40px;
+    border: none;
+}
+
+main{
+    background-color: #0072CE;
+    position:absolute;
+    width:100%;
+}
+
+
+.itens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    height: 5%;
+}
+
+.itens img{
+    height:100%;
+    width:300px;
+}
+
+.Produto{
+    width:10%;
+    margin: 5% 3% 5% 3%;
+    transition:.5s;
+    text-align: left;
+    justify-content: center;
+}
+
+.Produto__capa{
+    height:100%;
+    position:relative;
+    object-fit: cover;
+    border-radius:5% ;
+    margin-top:5px;
+}
+
+
+.Produto__nome{
+    font-size: 20px;
+    color: white;
+}
+
+.itens:has(.Produto:hover) .Produto {
+    opacity: 0.5;
+    transition: opacity .5s ease;
+}
+  
+.itens:has(.Produto:hover) .Produto:hover {
+    opacity: 1;
+}
+
