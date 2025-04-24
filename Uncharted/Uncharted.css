@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--tipo-de-fonte);
+}
+
+:root{
+    --tipo-de-fonte: "Montserrat", sans-serif;
+    --margem-esquerda: 10px;
+    --cor-textos:#ebeef0;
+}
+
+body{
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(45deg, #30445c 30%,  #edf7f9 80%);
+}
+
+header{
+    display: flex;
+    justify-content: start;
+}
+
+.cabecalho{
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+}
+
+.imagem{
+    height: 140px;
+    margin-left: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin: 40px;
+    list-style: none;
+}
+
+.menu__botao{
+    padding: 10px;
+    border: none;
+    background-color: white;
+}
+
+.menu__botao:hover{
+    background-color: #ebeef0;
+    border-radius:8px;
+}
+
+.botao-comprar{
+    background-color: #d53b00;
+    margin-right: 20px;
+    padding:0 10px;
+    border-radius: 20px;
+    color: white;
+    height:40px;
+    border: none;
+}
+
+main{
+    color: var(--cor-textos);
+    margin-top: 150px;
+}
+
+.arte__principal{
+    height:500px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa__e__historia{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: 100px;
+    margin-left: 5%;
+    gap:100px;
+}
+
+.imagem__capa{
+    width:80%;
+    height:80%;
+    margin-left: var(--margem-esquerda);
+}
+
+.titulo__jogo{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: var(--margem-esquerda);
+}
+
+.precos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: var(--margem-esquerda);
+}
+
+.preco__antigo{
+    color: #9c2c28;
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.preco{
+    color: #0f1f2f;
+    font-size: 30px;
+    justify-content: start;
+    align-items: center;
+}
+
+.botao__comprar__jogo{
+    color:#edf7f9;
+    background-color: #0f1f2f;
+    border-radius: 40px;
+    box-shadow: 5px 10px 20px #edf7f9;
+    margin-top: 20px;
+    padding: 5px;
+    margin-left: var(--margem-esquerda);
+    width: 400px;
+    height: 80px;
+    font-size: 27px;
+    border: none;
+}
+
+.descricao__historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    margin-left: 7%;
+    border: #ebeef0;
+    box-shadow: 30px 30px 20px #0f1f2f;
+    gap:50px;
+    font-size:20px;
+}
+
+.idade__recomendada{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 30px;
+    margin-top: 20px;
+    flex-direction: row;
+    gap:10px;
+}
+
+.imagem__recomendacao{
+    width: 50px;
+    height: 50px;
+}
+
+.informacoes__finais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+}
+
+.trofeus{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 3px white;
+    width: 500px;
+}
+
+.organizacao__trofeus{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.trofeu__bronze{
+    gap:3px;
+}
+
+.imagem__trofeu{
+    width:30px;
+    height: 30px;
+}
+
+.bronze{
+    width:50px;
+    height: 30px;
+}
+
+.informacoes__jogo{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.imagem__final{
+    width: 500px;
+    height: 200px;
+    gap:70px;
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0 100px 150px;
+}
+
